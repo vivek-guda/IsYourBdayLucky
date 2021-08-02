@@ -54,11 +54,18 @@ input {
   cursor: pointer;
 }
 
+h3 {
+  margin: auto;
+  margin-top: 2rem;
+  color: #ff4d5a;
+  font-size: 1.25rem;
+}
+
 #output-div {
   min-height: 50px;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: 2px solid #ff4d5a;
   background-color: rgb(228, 220, 220);
   border-radius: 0.5rem;
