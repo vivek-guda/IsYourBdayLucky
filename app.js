@@ -2,6 +2,9 @@ const dob = document.querySelector("#dob");
 const luckyNumber = document.querySelector("#lucky-num");
 const checkBtn = document.querySelector("#check-btn");
 const output = document.querySelector("#output");
+const faTimes = document.querySelector(".fa-times");
+const errMsg = document.querySelector("#errMsg");
+const body = document.querySelector("#body");
 
 const calculateSum = (bday) => {
   bday = bday.replaceAll("-", "");
@@ -28,8 +31,14 @@ checkBtn.addEventListener("click", () => {
     const lucky = checkLucky(sum, lNum);
     if (lucky) {
       output.innerText = "Your Birthday is lucky 🥳";
+      body.style.backgroundImage = "url('./images/happy.gif')";
     } else {
       output.innerText = "Your Birthday is not that lucky 😐";
+      body.style.backgroundImage = "url('./images/rain.gif')";
     }
   }
+});
+
+faTimes.addEventListener("click", () => {
+  errMsg.style.display = "none";
 });

@@ -11,21 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
     <title>Is your Bday lucky</title>
   </head>
   <body>
-    <div id="container">
-      <h1>Is your Birthday lucky? 🤔</h1>
-      <div id="inp-cont">
-        <label for="dob">Date of Birth:</label>
-        <input id="dob" type="date" />
-        <label for="lucky-num">Lucky Number</label>
-        <input id="lucky-num" type="number" />
-        <button id="check-btn">Check</button>
-      </div>
-      <h3>Output :</h3>
-      <div id="output-div">
-        <p id="output"></p>
+    <div id="body">
+      <div id="container">
+        <h1>Is your Birthday lucky? 🤔</h1>
+        <p id="errMsg">
+          <b>Privacy Notice!</b> We are not storing your
+          data.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <i class="fa fa-times"></i>
+        </p>
+        <div id="inp-cont">
+          <label for="dob">Date of Birth:</label>
+          <input id="dob" type="date" />
+          <label for="lucky-num">Lucky Number</label>
+          <input id="lucky-num" type="number" />
+          <button id="check-btn">Check</button>
+        </div>
+        <h3>Output :</h3>
+        <div id="output-div">
+          <p id="output"></p>
+        </div>
       </div>
     </div>
 
